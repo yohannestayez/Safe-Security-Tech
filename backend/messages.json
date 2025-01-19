@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "yib aya",
+    "email": "yohannes14taye@gmail.com",
+    "message": "hello I want to work with you\n",
+    "created_at": "2025-01-18T21:54:08.379977",
+    "read": false
+  },
+  {
+    "id": 2,
+    "name": "Beletu Mekuria",
+    "email": "beletu@gmail.com",
+    "message": "Hello Mr yibeltal, we want a CCTV camera for our company. we can dicuss details through email, please contact us for further contact",
+    "created_at": "2025-01-18T21:54:08.379977",
+    "read": true
+  },
+  {
+    "id": 3,
+    "name": "john",
+    "email": "yohannes14taye@gmail.com",
+    "phone": "",
+    "subject": "Contact Form Submission",
+    "message": "thank you",
+    "submission_date": "2025-01-18T21:53:43.033609",
+    "is_read": false,
+    "read": false,
+    "created_at": "2025-01-18T21:53:43.033609"
+  }
+]

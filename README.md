@@ -38,7 +38,7 @@ Before you begin, ensure you have the following installed:
 ### Frontend Setup
 1. Clone the repository:
    ```bash
-   git clone [your-repo-link]
+   git clone https://github.com/yohannestayez/Safe-Security-Tech.git
    cd safe-security-tech
    ```
 
@@ -119,8 +119,6 @@ SECRET_KEY=your_secret_key
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+feel free to modify and use this project 
 
-## Support
 
-For support, email [your-email] or open an issue in the repository.

@@ -1,43 +1,33 @@
 # Safe Security Tech Backend
 
-The backend service for the Safe Security Tech application, built with Flask and SQLAlchemy.
+The backend service for the Safe Security Tech application, built with Flask.
 
 ## 🛠️ Technology Stack
 
 - **Flask**: Web framework
-- **SQLAlchemy**: ORM for database operations
-- **Flask-Migrate**: Database migration management
 - **Flask-JWT-Extended**: JWT authentication
 - **Flask-CORS**: Handle Cross-Origin Resource Sharing
 
-## 📋 API Endpoints
+## 🗄️ File Structure
 
-### Authentication
-- `POST /api/auth/login`: User login
-- `POST /api/auth/register`: User registration
-- `POST /api/auth/admin/login`: Admin login
+- **app.py**: Main application file that initializes the Flask app and defines the routes.
+- **messages.json**: Contains data related to messages or incidents. This file is used to store all messages submitted through the application.
+- **migrations/**: Directory for migration scripts, which is not used in this application as it does not connect to a database.
+- **requirements.txt**: Lists all the required Python packages for the backend. Install them using `pip install -r requirements.txt`.
+- **venv/**: Directory for the virtual environment. Activate it before running the application.
 
-### User Management
-- `GET /api/users`: Get all users (Admin only)
-- `GET /api/users/<id>`: Get specific user
-- `PUT /api/users/<id>`: Update user
-- `DELETE /api/users/<id>`: Delete user
+## 🚀 Running the Application
 
-### Security Management
-- `POST /api/incidents`: Report new incident
-- `GET /api/incidents`: Get all incidents
-- `GET /api/incidents/<id>`: Get specific incident
-- `PUT /api/incidents/<id>`: Update incident status
+To run the application, ensure your virtual environment is activated and execute:
+```bash
+python app.py
+```
 
-## 🗄️ Database Schema
+The backend API will be available at `http://localhost:5000`.
 
-The application uses SQLite in development and can be configured for PostgreSQL in production.
+## 🔄 Data Storage
 
-### Tables
-- Users
-- Admins
-- Incidents
-- SecurityLogs
+This application does not use a traditional database; instead, it stores messages in the `messages.json` file. This approach is suitable for smaller applications but may have limitations in terms of performance and scalability as the amount of data grows.
 
 ## 🔧 Development Setup
 
@@ -60,16 +50,6 @@ The application uses SQLite in development and can be configured for PostgreSQL 
    export FLASK_APP=app.py
    export FLASK_ENV=development
    export SECRET_KEY=your_secret_key
-   ```
-
-5. Initialize database:
-   ```bash
-   flask db upgrade
-   ```
-
-6. Run the development server:
-   ```bash
-   python app.py
    ```
 
 ## 🔍 Testing

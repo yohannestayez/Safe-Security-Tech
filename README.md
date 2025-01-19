@@ -90,8 +90,13 @@ safe-security-tech/
 │   ├── migrations/       # Database migrations
 │   └── requirements.txt  # Python dependencies
 ├── public/               # Static files
+├── Screenshots/          # Screenshots of the application
 └── package.json         # Frontend dependencies
 ```
+
+## 📸 Screenshots
+
+The `Screenshots` folder contains images that demonstrate the application's user interface and functionality. These screenshots can be useful for understanding how the application looks and operates.
 
 ## Environment Variables
 
@@ -120,5 +125,3 @@ SECRET_KEY=your_secret_key
 ## License
 
 feel free to modify and use this project 
-
-
